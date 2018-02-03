@@ -73,5 +73,5 @@ export class GetBoundingClientRect extends React.Component {
 GetBoundingClientRect.propTypes = {
   scroll: PropTypes.bool,
   resize: PropTypes.bool,
-  rednder: PropTypes.func,
+  render: PropTypes.func,
 };

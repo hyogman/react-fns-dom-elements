@@ -4,6 +4,8 @@ Inspired by: [react-fns](https://github.com/jaredpalmer/react-fns)
 
 So far just implemented: [getBoundingClientRect](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
 
+`yarn add react-fns-dom-elements`
+
 ## Simple Example
 
 ```js
