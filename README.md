@@ -43,8 +43,11 @@ If neither of `scroll` or `resize` is added then getBoundingRectClient() is only
 
 ## Typing
  `bottom, height, left, right, top, width, x, y` : `number`
- `render` : `functional react component`
+ 
+ `render` : `function react component`
+ 
  `scroll` : `boolean`
+ 
  `resize` : `boolean`
  
  ## Gif example
