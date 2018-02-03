@@ -1,15 +1,21 @@
 {
-  "name": "react-component-example-project",
-  "version": "0.1.3",
-  "description": "A minimal boilerplate for building a react component for npm, including a demo page.",
+  "name": "react-fns-dom-elements",
+  "version": "0.0.1",
+  "description":
+    "A minimal boilerplate for building a react component for npm, including a demo page.",
   "main": "lib/index.js",
+  "jest": {
+    "setupFiles": ["<rootDir>/src/lib/setup.js"]
+  },
   "scripts": {
     "lib": "babel src/lib -d lib",
     "lib:watch": "babel src/lib -w -d lib",
-    "docs": "webpack-dev-server",
-    "docs:prod": "webpack -p"
+    "docs": "BABEL_ENV=development webpack-dev-server",
+    "docs:prod": "webpack -p",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
-  "keywords": [],
+  "keywords": ["react", "dom", "api", "render props"],
   "license": "MIT",
   "peerDependencies": {
     "react": "^15.3.0 || ^16.2.0",
@@ -17,22 +23,34 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.37",
-    "@babel/core": "^7.0.0-beta.37",
+    "@babel/core": "^7.0.0-beta.39",
     "@babel/preset-env": "^7.0.0-beta.37",
     "@babel/preset-react": "^7.0.0-beta.37",
+    "babel-core": "^7.0.0-0",
+    "babel-jest": "^22.1.0",
     "babel-loader": "^8.0.0-beta.0",
     "css-loader": "^0.28.8",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "html-webpack-plugin": "^2.30.1",
+    "jest": "^21.3.0-beta.15",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "regenerator-runtime": "^0.11.1",
     "style-loader": "^0.19.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.11.0"
   },
-  "author": "Markus Englund <markus.s.englund@gmail.com>",
+  "author": "hyogman",
   "homepage": "https://github.com/yogaboll/react-npm-component-starter",
   "repository": {
     "type": "git",
-    "url": "git@github.com:yogaboll/react-npm-component-starter.git"
+    "url": "git@github.com:hyogman/react-fns-dom-elements.git"
+  },
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.39",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "prettier": "^1.10.2",
+    "prop-types": "^15.6.0"
   }
 }
