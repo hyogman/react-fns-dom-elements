@@ -47,3 +47,4 @@ Host demo on GitHub Pages:
 * Commit your changes to git and push to your GitHub repository.
 * On your GitHub repo page, click the **settings** tab and scroll down to the **GitHub Pages** heading. Pick `master branch /docs folder` in the **source** dropdown, And BOOM, your demo page is already live on the internet for free.
 * Note: Sometimes it might take about an hour for the page to actually start hosting. Adding /index.html after the url works instantly for whatever reason.
+# react-fns-dom-elements
