@@ -41,10 +41,18 @@ The props `bottom, height, left, right, top, width, x, y` are injected when the 
 
 If neither of `scroll` or `resize` is added then getBoundingRectClient() is only called on initial mount. 
 
-## Simple Example
+## Typing
  `bottom, height, left, right, top, width, x, y` : `number`
  `render` : `functional react component`
  `scroll` : `boolean`
  `resize` : `boolean`
+ 
+ ## Gif example
+ 
+ Below with this example we see the width of the container changing due to the position of the scroll and the height of the container changing due to the size of the window. 
+ 
+ 
+ 
+ 
  
  
